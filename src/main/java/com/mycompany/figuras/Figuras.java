@@ -1,8 +1,10 @@
 /*
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  */
-
 package com.mycompany.figuras;
+
+import com.mycompany.figuras.Cuadrados.Cuadrado;
+import com.mycompany.figuras.Triangulos.Triangulo;
 
 /**
  *
@@ -11,9 +13,23 @@ package com.mycompany.figuras;
 public class Figuras {
 
     public static void main(String[] args) {
-        System.out.println("Hello World!");
-        System.out.println("Bienvenido");
+
+        Cuadrado objCuadrado = new Cuadrado();
+
+        objCuadrado.logintudCuadrado = 20;
+
+        objCuadrado.imprimir();
+
+        double calculo = objCuadrado.calcularLongitudc();
+
+        System.out.println("La xxxxx: " + calculo);
         
-        System.out.println("hola");
+        
+
+        Triangulo = objTriangulo = new Triangulo();
+
+        objTriangulo.alturaTriangulo = 30;
+
     }
+
 }

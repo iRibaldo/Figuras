@@ -2,16 +2,16 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package com.mycompany.figuras.Formas;
+package com.mycompany.figuras.Triandulos.Tipos;
 
-
-public class Tipos {
+/**
+ *
+ * @author User
+ */
+public enum Tipostriangulo {
     
-    public float cuadrado;
-    public float triangulo;
-    
-    
-    
-    
+    EQUILATERO,
+    ISOCELES,
+    ESCALENO
     
 }
