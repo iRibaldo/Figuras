@@ -25,8 +25,8 @@ public class Cuadrado {
 
     public double calcularLongitudc() {
 
-        double perimetroc = 0;
-        return perimetroc = (logintudCuadrado * 4);
+        double perimetro = 0;
+        return perimetro = (logintudCuadrado * 4);
         
         
 
