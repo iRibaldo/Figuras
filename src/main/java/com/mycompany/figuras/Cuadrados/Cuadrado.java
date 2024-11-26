@@ -25,9 +25,16 @@ public class Cuadrado {
 
     public double calcularLongitudc() {
 
-        double longitud = 0;
-        return longitud = (logintudCuadrado * 4);
+        double perimetroc = 0;
+        return perimetroc = (logintudCuadrado * 4);
+        
+        
 
+    }
+    public double calcularAreac() {
+        
+        double area = 0;
+        return area = (this.logintudCuadrado*this.logintudCuadrado) ;
     }
 
 }
