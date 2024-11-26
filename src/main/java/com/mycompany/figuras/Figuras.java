@@ -34,8 +34,13 @@ public class Figuras {
                 
         objTriangulo.imprimir();
         
-        double Hipotenusa = objTriangulo.calcularHipotenusa();
-        System.out.println("La hipotenusa del triangunlo es: " + Hipotenusa);
+        double hipotenusa = objTriangulo.calcularHipotenusa();
+        if(hipotenusa==0){
+            System.out.println("Es imnposible calcular la hipotenusa debido a que sus lados son iguales");
+        }else{
+        System.out.println("La hipotenusa del triangunlo es: " + hipotenusa);
+        }
+        
         double perimetroTriangulo = objTriangulo.perimetroTriangulo();
         System.out.println("El perimetro del triangulo es: " + perimetroTriangulo);
         double areaTriangulo = objTriangulo.areaTriangulo();

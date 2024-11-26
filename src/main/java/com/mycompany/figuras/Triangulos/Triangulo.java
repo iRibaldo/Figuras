@@ -29,31 +29,39 @@ public class Triangulo {
     public void imprimir() {
 
         System.out.println("La altura del triangulo es de: " + alturaTriangulo);
-        System.out.println("La base del trianfulo es de: " + baseTriangulo);
+        System.out.println("La base del triangulo es de: " + baseTriangulo);
         System.out.println("El triangulo es: " + tipostriangulo);
     }
-    
-    public double areaTriangulo(){
+
+    public double areaTriangulo() {
         double areaTriangulo = 0;
-        return areaTriangulo = (baseTriangulo * alturaTriangulo)/2;
+        return areaTriangulo = (baseTriangulo * alturaTriangulo) / 2;
     }
 
     public double calcularHipotenusa() {
 
         double hipotenusa = 0;
-        if (null == tipostriangulo) {
-            System.out.println("Es imposible calcular la hipotenusa del triangulo, dibido a que todos sus lados son iguales ");
-        }else switch (tipostriangulo) {
-            case ISOCELES -> hipotenusa = (Math.sqrt((alturaTriangulo * alturaTriangulo) + (baseTriangulo * baseTriangulo)));
-            case ESCALENO -> hipotenusa = (Math.sqrt((alturaTriangulo * alturaTriangulo) + (baseTriangulo * baseTriangulo)));
-            default -> System.out.println("Es imposible calcular la hipotenusa del triangulo, dibido a que todos sus lados son iguales ");
-        }
 
+         if (null != tipostriangulo) switch (tipostriangulo) {
+            case ISOCELES:
+                hipotenusa = (Math.sqrt((alturaTriangulo * alturaTriangulo) + (baseTriangulo * baseTriangulo)));
+                break;
+            case ESCALENO:
+                hipotenusa = (Math.sqrt((alturaTriangulo * alturaTriangulo) + (baseTriangulo * baseTriangulo)));
+                break;
+            case EQUILATERO:
+                hipotenusa=0;
+                // System.out.println("Es imposible calcular la hipotenusa del triangulo, dibido a que todos sus lados son iguales ");
+                break;
+            default:
+                break;
+        }
         return hipotenusa;
+        
     }
-    
-    public double perimetroTriangulo (){
-        double perimetroTriangulo = 0;
-        return perimetroTriangulo = (baseTriangulo + alturaTriangulo + calcularHipotenusa());
+
+    public double perimetroTriangulo() {
+        
+        return (baseTriangulo + alturaTriangulo + calcularHipotenusa());
     }
 }
