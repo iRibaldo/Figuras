@@ -3,7 +3,9 @@
  */
 package com.mycompany.figuras;
 
+import com.mycompany.figuras.Circulos.Circulo;
 import com.mycompany.figuras.Cuadrados.Cuadrado;
+import com.mycompany.figuras.Rectangulos.Rectangulo;
 import com.mycompany.figuras.Triandulos.Tipos.Tipostriangulo;
 import com.mycompany.figuras.Triangulos.Triangulo;
 
@@ -44,9 +46,36 @@ public class Figuras {
         double perimetroTriangulo = objTriangulo.perimetroTriangulo();
         System.out.println("El perimetro del triangulo es: " + perimetroTriangulo);
         double areaTriangulo = objTriangulo.areaTriangulo();
-        System.out.println("El area del triangulo es: " + areaTriangulo);
+        System.out.println("El area del triangulo es: " + areaTriangulo); 
         
-
+         //rectangulo
+        
+        Rectangulo objRectangulo = new Rectangulo();
+        
+        objRectangulo.alturaRectangulo=5;    
+        objRectangulo.baseRectangulo=10;
+        
+        objRectangulo.imprimir();
+        double calcularPerimetro = objRectangulo.calcularPerimetro();
+        System.out.println("El perimeto del rectangulo es: " + calcularPerimetro);
+        
+        double calcularArea = objRectangulo.calcularArea();
+        System.out.println("El Area del rectangulo es: " + calcularArea);
+        
+        
+         //Circulo
+         
+         
+        Circulo circulo = new Circulo(7); // radio = 7 cm
+        System.out.println("\nCirculo:");
+        
+        System.out.println("Radio: " + circulo.getRadio());
+        System.out.println("area: " + circulo.calcularArea());
+        System.out.println("Perimetro: " + circulo.calcularPerimetro());
+       
     }
-
 }
+    
+  
+    
+     
