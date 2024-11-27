@@ -66,12 +66,12 @@ public class Figuras {
          //Circulo
          
          
-        Circulo circulo = new Circulo(7); // radio = 7 cm
-        System.out.println("\nCirculo:");
+        Circulo objCirculo = new Circulo();
+        objCirculo.radio=8;
         
-        System.out.println("Radio: " + circulo.getRadio());
-        System.out.println("area: " + circulo.calcularArea());
-        System.out.println("Perimetro: " + circulo.calcularPerimetro());
+        objCirculo.imprimir();
+        System.out.println("area: " + objCirculo.calcularArea());
+        System.out.println("Perimetro: " + objCirculo.calcularPerimetro());
        
     }
 }
