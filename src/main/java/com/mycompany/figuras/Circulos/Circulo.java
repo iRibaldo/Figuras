@@ -11,13 +11,20 @@ package com.mycompany.figuras.Circulos;
 public class Circulo {
   
     public double radio;
+    
+    public void imprimir (){
+        
+        System.out.println("El radio del circulo es: " + radio);
+        
+    }
+
+    public Circulo() {
+    }
+    
+    
 
     public Circulo(double radio) {
         this.radio = radio;
-    }
-
-    public double getRadio() {
-        return radio;
     }
 
     public double calcularArea() {
@@ -27,5 +34,6 @@ public class Circulo {
     public double calcularPerimetro() {
         return 2 * 3.1416 * radio;
     }
+
 }
     

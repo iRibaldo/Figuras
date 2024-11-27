@@ -36,6 +36,7 @@ public class Triangulo {
     public double areaTriangulo(){
         double areaTriangulo = 0;
         return areaTriangulo = (baseTriangulo * alturaTriangulo)/2;
+    
     }
 
     public double calcularHipotenusa() {

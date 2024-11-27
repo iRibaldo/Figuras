@@ -10,11 +10,7 @@ package com.mycompany.figuras.Rectangulos;
  */
 public class Rectangulo {
     public double baseRectangulo;
-    
     public double alturaRectangulo;
-    public double calcularArea;
-    public double calcularPerimetro;
-
     public Rectangulo() {
     }
     
@@ -23,12 +19,6 @@ public class Rectangulo {
          this.alturaRectangulo=alturaRectangulo;
          this.baseRectangulo=baseRectangulo;
      } 
-      public double getBase() {
-        return baseRectangulo;
-    }
-      public double getAltura() {
-        return alturaRectangulo;
-    }
      public double calcularArea() {
         return baseRectangulo* alturaRectangulo;
     }
